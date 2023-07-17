@@ -20,7 +20,7 @@ const taskSchema = new mongoose.Schema(
 
 const boardSchema = new mongoose.Schema(
   {
-    name: { type: String, enum: ['Todo', 'Doing', 'Done'] },
+    name: String,
     tasks: [taskSchema]
   },
   { versionKey: false }
